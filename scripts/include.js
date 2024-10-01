@@ -11,9 +11,8 @@ function includeComponent() {
 
 		// search for elements with a certain atrribute
 		component = elmnt.getAttribute("include-component");
-		console.log(component);
 		file = `components/${component}.html`;
-		console.log(file);
+		console.log(`Including component ${component} from ${file}`);
 
 		if (file) {
 			// Make an HTTP request using the attribute value as the file name
