@@ -15,14 +15,22 @@
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="./favicon.ico">
 
-		<title>Noah S. Roberts | Home</title>
+		<!-- Stylesheets and scripts -->
 		<link rel="stylesheet" href="./style/main.css">
+		<script src="scripts/include.js"></script>
+
+		<title>Noah S. Roberts | Home</title>
 	</head>
 
 
 	<body>
+		<header><div include-component="header"></div></header>
 		<h1>Welcome!</h1>
 		
 		
 	</body>
+
+	<script>
+		includeComponent();
+	</script>
 </html>

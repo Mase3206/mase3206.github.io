@@ -1,4 +1,8 @@
 body {
   max-width: 800px;
   font-family: sans-serif;
+}
+
+header {
+  display: inline;
 }/*# sourceMappingURL=main.css.map */
