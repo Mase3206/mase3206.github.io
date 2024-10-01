@@ -1,7 +1,1 @@
 **.DS_Store
-
-# --- Hugo Stuff --- #
-.hugo_build.lock
-resources/_gen
-# Hugo-generated content
-public/
