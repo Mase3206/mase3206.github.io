@@ -3,6 +3,16 @@ body {
   font-family: sans-serif;
 }
 
-header {
+header * {
   display: inline;
+  color: black;
+}
+header a {
+  text-decoration: underline;
+}
+header a:hover {
+  text-decoration: none;
+}
+header a:visited {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
