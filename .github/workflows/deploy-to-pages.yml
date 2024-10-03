@@ -44,11 +44,12 @@ jobs:
         with:
           source: style/main.sass
           destination: /tmp/assets/css/main.css
-          sourceMap: main.css.map
-          # outFile: /tmp/assets/css/main.css  # it'll automatically append the ".map" to the end
+          # sourceMap: /tmp/assets/css/main.css.map
+          sourceMap: true
+          outFile: /style/main.css  # it'll automatically append the ".map" to the end
           omitSourceMapUrl: false
-          sourceMapEmbed: true
-          sourceMapRoot: https://mase3206.github.io/style
+          sourceMapEmbed: false
+          sourceMapRoot: https://mase3206.github.io
           debug: true
 
       - name: Upload Complied CSS
