@@ -1,3 +1,5 @@
+@use "colors"
+	
 body
 	margin: 0 auto
 	width: 800px
@@ -41,8 +43,22 @@ header
 		font-size: 1.2em
 		font-weight: bold
 
-	
-	
+
+a
+	color: black
+
+	&:hover
+		text-decoration: none
+	&:visited
+		color: colors.$dark-grey	
+
+
+ul
+	&.bulletless
+		list-style-type: none
+		padding-left: 0px
+	li
+		padding-bottom: 0.3em
 
 
 img
