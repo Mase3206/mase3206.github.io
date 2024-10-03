@@ -45,7 +45,7 @@ jobs:
           source: style/main.sass
           destination: /tmp/assets/css/main.css
           sourceMap: true
-          outFile: /tmp/assets/css/main.css  # it'll automatically append the ".map" to the end
+          # outFile: /tmp/assets/css/main.css  # it'll automatically append the ".map" to the end
           omitSourceMapUrl: false
           debug: true
 
