@@ -46,7 +46,7 @@ jobs:
           destination: /tmp/assets/css/main.css
           # sourceMap: /tmp/assets/css/main.css.map
           sourceMap: true
-          outFile: /style/main.css  # it'll automatically append the ".map" to the end
+          outFile: main.css  # it'll automatically append the ".map" to the end
           omitSourceMapUrl: false
           sourceMapEmbed: false
           sourceMapRoot: https://mase3206.github.io
