@@ -40,7 +40,7 @@ jobs:
         run: mkdir -vp /tmp/assets/css
 
       - name: Compile CSS from Sass files
-        uses: Mase3206/sass-build-with-maps
+        uses: Mase3206/sass-build-with-maps@v0.7.1
         with:
           source: style/main.sass
           destination: /tmp/assets/css/main.css
