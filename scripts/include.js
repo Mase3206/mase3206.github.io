@@ -1,16 +1,17 @@
-// from https://www.w3schools.com/howto/howto_html_include.asp
+// originally from https://www.w3schools.com/howto/howto_html_include.asp
+// modified slightly to recognize a different include syntax
 
 function includeComponent() {
-	var z, i, elmnt, file, xhttp;
+	var z, i, el, file, xhttp;
 
 	// Loop through a collection of all HTML elements
-	z = document.getElementsByTagName("div");
+	elements = document.getElementsByTagName("include");
 
-	for (i = 0; i < z.length; i++) {
-		elmnt = z[i];
+	for (i = 0; i < elements.length; i++) {
+		el = elements[i];
 
 		// search for elements with a certain atrribute
-		component = elmnt.getAttribute("include-component");
+		component = el.getAttribute("component");
 		file = `components/${component}.html`;
 		console.log(`Including component ${component} from ${file}`);
 
@@ -19,12 +20,14 @@ function includeComponent() {
 			xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
 				if (this.readyState == 4) {
-					if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-					if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+					if (this.status == 200) {el.outerHTML = this.responseText;}
+					// if (this.status == 404) {el.innerHTML = "Page not found.";}
 
-					// Remove the attribute, and call this function once more
-					elmnt.removeAttribute("include-html");
-					// includeComponent();
+					// Remove the `include` element
+					// el.remove();
+
+
+					includeComponent(); 
 				}
 			}
 
