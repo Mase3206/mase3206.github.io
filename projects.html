@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- Provide a description of your page: -->
+		<meta name="description" content="">
+
+		<!-- Provide the author information for the page: -->
+		<meta name="author" content="Noah S. Roberts">
+
+		<!-- Other meta elements -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+		<!-- Stylesheets and scripts -->
+		<link rel="stylesheet" href="/style/main.css">
+		<script src="/scripts/include.js"></script>
+
+		<title>Noah S. Roberts | Projects</title>
+	</head>
+
+
+	<body>
+		<include component="header"></include>
+		
+		<div id="main-content">
+			<h1 class="page-title">Projects</h1>
+
+			<div class="project" id="message-board">
+				<h2>Message Board</h2>
+				<p>
+					This was an excellent continuation down the Django path. We set up the admin app for the first time and learned how to edit the site's content through there. In this case, we configured it such that the posts could be added, edited, and removed through the admin app.
+				</p>
+				<p>
+					Fun tidbit that we learned: Django was originally intended to be an online news management system.
+				</p>
+				<div class="project-links">
+					<p><a href="https://git.noahsroberts.com/nroberts/CSCI-258/src/branch/main/chapters/5-message-board" target="_blank" rel="noopener noreferrer">Link to repo</a> - public</p>
+				</div>
+			</div>
+		
+			<div class="project" id="company-website">
+				<h2>Company Website</h2>
+				<p>
+					For this assignment, we were tasked with creating a website using Django for a fictional company with a few pages, one of which must be populated based on the context given in that page's view.
+				</p>
+				<div class="project-links">
+					<p><a href="https://github.com/Mase3206/csci258-company-website" target="_blank" rel="noopener noreferrer">Link to repo</a> - private</p>
+				</div>
+			</div>
+
+			<div class="project" id="personal-website">
+				<h2>Personal Website</h2>
+				<p>
+					This one was a pretty simple project. We needed to create a basic website with Django to demonstrate our learning thus far. In this case, it was a simple static page with the word "Homepage".
+				</p>
+				<div class="project-links">
+					<p><a href="https://github.com/Mase3206/csci258-personal-website" target="_blank" rel="noopener noreferrer">Link to repo</a> - private</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<include component="footer"></include>
+	</body>
+
+	<script>
+		includeComponent();
+	</script>
+</html>
