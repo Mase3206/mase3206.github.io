@@ -12,7 +12,7 @@ function includeComponent() {
 
 		// search for elements with a certain atrribute
 		component = el.getAttribute("component");
-		file = `components/${component}.html`;
+		file = `/components/${component}.html`;
 		console.log(`Including component ${component} from ${file}`);
 
 		if (file) {

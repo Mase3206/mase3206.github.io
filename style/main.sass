@@ -1,17 +1,151 @@
+@use "colors"
+
 body
-	max-width: 800px
-	font-family: sans-serif
+	margin: 0 auto
+	width: 800px
+	font-family: 'Helvetica', sans-serif
+	line-height: 160%
+
+#main-content
+	margin-bottom: 5em
 
 
 header
-	*
-		display: inline
-		color: black
+	margin-top: 2em
+	margin-bottom: 2em
+	// padding-bottom: 2em
 
+	*
+		color: black
+		display: inline
+
+	hr, &>div
+		display: block !important
+
+	hr
+		margin-top: 1em
+	
 	a
-		text-decoration: underline
+		text-decoration: none
 		
 		&:hover
-			text-decoration: none
+			text-decoration: underline
 		&:visited
 			color: black
+
+		
+
+#navbar 
+	float: right
+	vertical-align: bottom
+	
+
+#site-title 
+	float: left
+
+	*
+		font-size: 1.2em
+		font-weight: bold
+
+
+footer
+	margin-top: 5em
+
+	*
+		font-weight: lighter
+	a:visited
+		color: black
+
+
+a
+	color: black
+
+	&:hover
+		text-decoration: none
+	&:visited
+		color: colors.$dark-grey	
+
+
+ul
+	&.bulletless
+		list-style-type: none
+		padding-left: 0px
+	li, li *
+		padding-bottom: 0.3em
+
+.list-group
+	overflow: auto
+	margin-bottom: 1.5em
+
+	.list-group-column
+		display: inline-block
+		width: 50%
+	
+	.left
+		float: left
+
+	.right
+		float: right
+
+
+img
+	&.large
+		width: 600px
+		margin-bottom: 3em
+	
+	&.center
+		display: block
+		margin-left: auto
+		margin-right: auto
+		max-width: 100%
+
+
+h1
+	&.page-title
+		font-size: 2.5em
+		font-weight: lighter
+		text-align: center
+		padding-top: 0.8em
+		padding-bottom: 0.8em
+
+h2, h3, h4, h5, h6
+	padding-top: 0.5em
+	padding-bottom: 0em
+	margin-bottom: .5em
+
+	+*
+		margin-top: .5em
+		margin-block-start: .5em
+		
+
+
+object
+	&.pdf
+		height: 900px
+		width: 80%
+
+
+.tech-stack
+	.tech-stack-group
+		display: inline
+		padding-right: 1em
+		
+
+	img.icon
+		height: 40px
+		width: 40px
+
+
+.project
+	margin-bottom: 2em
+	
+	> *
+		margin-top: 0.5em
+		margin-bottom: 0.5em
+
+		> *
+			margin-top: 0
+			margin-bottom: 0
+
+	.project-links
+		font-weight: lighter
