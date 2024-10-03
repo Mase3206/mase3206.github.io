@@ -1,23 +1,50 @@
 body
-	max-width: 800px
+	margin: 0 auto
+	width: 800px
 	font-family: sans-serif
 
 
 header
-	*
-		display: inline
-		color: black
+	margin-top: 2em
+	margin-bottom: 2em
+	// padding-bottom: 2em
 
+	*
+		color: black
+		display: inline
+
+	hr, &>div
+		display: block !important
+
+	hr
+		margin-top: 1em
+	
 	a
-		text-decoration: underline
+		text-decoration: none
 		
 		&:hover
-			text-decoration: none
+			text-decoration: underline
 		&:visited
 			color: black
+
+		
+
+#navbar 
+	float: right
+	vertical-align: bottom
+	
+
+#site-title 
+	float: left
+
+	*
+		font-size: 1.2em
+		font-weight: bold
+
+	
+	
 
 
 img
 	&.large
 		width: 600px
-		
