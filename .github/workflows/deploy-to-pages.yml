@@ -44,6 +44,9 @@ jobs:
         with:
           source: style/main.sass
           destination: /tmp/assets/css/main.css
+          sourceMap: true
+          outFile: /tmp/assets/css/main.css.map
+          # omitSourceMapUrl: false
 
       - name: Upload Complied CSS
         uses: actions/upload-artifact@v4
