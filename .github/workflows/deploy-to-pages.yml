@@ -44,9 +44,10 @@ jobs:
         with:
           source: style/main.sass
           destination: /tmp/assets/css/main.css
-          sourceMap: /tmp/assets/css/main.css.map
+          sourceMap: true
           # outFile: /tmp/assets/css/main.css  # it'll automatically append the ".map" to the end
           omitSourceMapUrl: false
+          sourceMapEmbed: true
           debug: true
 
       - name: Upload Complied CSS
