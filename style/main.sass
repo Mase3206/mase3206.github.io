@@ -3,7 +3,8 @@
 body
 	margin: 0 auto
 	width: 800px
-	font-family: sans-serif
+	font-family: 'Helvetica', sans-serif
+	line-height: 160%
 
 #main-content
 	margin-bottom: 5em
@@ -47,6 +48,15 @@ header
 		font-weight: bold
 
 
+footer
+	margin-top: 5em
+
+	*
+		font-weight: lighter
+	a:visited
+		color: black
+
+
 a
 	color: black
 
@@ -60,7 +70,7 @@ ul
 	&.bulletless
 		list-style-type: none
 		padding-left: 0px
-	li
+	li, li *
 		padding-bottom: 0.3em
 
 .list-group
