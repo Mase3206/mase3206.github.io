@@ -1,0 +1,14 @@
+{
+	"recommendations": [
+		"junstyle.vscode-django-support",
+		"batisteo.vscode-django",
+		"glenn2223.live-sass",
+		"ritwickdey.liveserver",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"ms-python.debugpy",
+		"visualstudioexptteam.vscodeintellicode",
+		"syler.sass-indented",
+		"jaspernorth.vscode-pigments"
+	]
+}
